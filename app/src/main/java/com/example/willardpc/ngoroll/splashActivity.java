@@ -1,31 +1,30 @@
 package com.example.willardpc.ngoroll;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 
-public class splashActivity extends AppCompatActivity {
+public class splashActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Button buttonStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        Thread myThread = new Thread(){
-            @Override
-            public void run(){
-                try {
-                    sleep(3000);
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+        buttonStart = (Button)findViewById(R.id.buttonStart);
 
-        };
+        buttonStart.setOnClickListener(this);
 
-        myThread.start();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(view == buttonStart){
+            startActivity(new Intent(this, MainActivity.class));
+        }
     }
 }

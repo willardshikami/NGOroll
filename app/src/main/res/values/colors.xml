@@ -3,4 +3,10 @@
     <color name="colorPrimary">#EF0D33</color>
     <color name="colorPrimaryDark">#C20A29</color>
     <color name="colorAccent">#F42547</color>
+
+    <!-- BUTTON -->
+    <color name="green_temp">#FFF</color>
+    <color name="green_dark">#FFF</color>
+    <color name="bright_green">#FFF</color>
+    <color name="button_green">#FFF</color>
 </resources>
