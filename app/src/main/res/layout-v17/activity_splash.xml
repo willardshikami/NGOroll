@@ -10,8 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/npbg"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
         android:weightSum="1">
 
         <RelativeLayout

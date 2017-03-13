@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NGOroll</string>
+
+    <string name="welcome_header">GIVING BACK</string>
+    <string name="welcome_paragraph">Look for NGOs you want to donate to and give back to the community for a better cause. The App helps you reimagine how to do that.</string>
+
 </resources>
